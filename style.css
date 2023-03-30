@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-primary:#f67e56;
+}
+body{
+    height: 100vh;
+    background: #DDD;
+    width: 100vw;
+}
+.ui{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+/* .ui div:nth-child(odd){
+    background-color: #BBB;
+} */
+
+.top,.top>div{
+    display: flex;
+}
+.top{
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px 0;
+    background-color: #f67e56;
+    color:#FFF;
+    font-weight:300;
+}
+.top>.left{
+    gap: 10px;
+}
+.top>.right{
+    justify-content: right;
+    gap: 10px;
+    
+}
+.text{
+    text-align: center;
+    font-size: 0.7em;
+    background-color: #fff;
+}
+
+
+/* ######################################## */
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* height: 1500px; */
+}
+.menu>div{
+    padding:6px;
+    text-align: center;
+    overflow: hidden;
+}
+.menu>div>img{
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ##################################### */
+
+.options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    margin-top: 2px;
+}
+.options>div{
+    text-align: center;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: var(--bg-primary);
+    margin-top: 2px;
+}
+.options>div>img{
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* ################### */
+.selection{
+    width: 99vw;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 7px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 5px;
+    box-shadow: 1px 1px 5px 0px #222;
+
+}
+.selection h3{
+    background-color: var(--bg-primary);
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 7px;
+    font-size: 1em;
+}
+.selection>div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+.selection>div:nth-child(3){
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    padding-inline: 40px;
+
+}
+.selection>div:nth-child(3)>p{
+    border-bottom: 2px solid var(--bg-primary);
+    margin-bottom: 20px ;
+    padding-inline: 45px;
+    padding-bottom: 7px;
+
+}
+button.next{
+    background-color: var(--bg-primary);
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    padding: 8px 50px;
+    border-radius: 1000000000px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+/* ############ */
+.footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 99vw;
+    color: var(--bg-primary);
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 0 auto;
+}
